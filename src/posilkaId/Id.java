@@ -1,3 +1,4 @@
+package posilkaId;
 
 import java.util.Scanner;
 
