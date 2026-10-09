@@ -101,15 +101,15 @@ public class IdService {public static Id[] ids;
 
     }
 
-    public static Id searchByName(String name) {
-        System.out.println("Выполняется поиск для: " + name);
-        for (int i = 0; i < ids.length; i++) {
-            if (ids[i].getName().equals(name)) {
-                return ids[i];
+    public static Id findByName(String name) {
+        for (Id i : ids) {
+            if (i.getName().equalsIgnoreCase(name)) {
+                return i;
             }
         }
         return null;
     }
+
 
 
 
