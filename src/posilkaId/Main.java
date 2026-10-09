@@ -26,19 +26,19 @@ public class Main {
 
             switch (choice){
                 case 1:
-                    Id.fillId();
+                    IdService.fillId();
                     break;
                 case 2:
-                    Id.printId();
+                    IdService.printId();
                     break;
                 case 3:
-                    Id.countSamara();
+                    IdService.countSamara();
                     break;
                 case 4:
-                    Id.psice10();
+                    IdService.psice10();
                     break;
                 case 5:
-                    Id.sortirovka();
+                    IdService.sortirovka();
                     break;
                 case 6:
                     System.out.println("программа завершена");
