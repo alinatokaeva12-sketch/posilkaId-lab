@@ -101,6 +101,14 @@ public class IdService {public static Id[] ids;
 
     }
 
+    public static Id findByName(String name) {
+        for (Id i : ids) {
+            if (i.getName().equalsIgnoreCase(name)) {
+                return i;
+            }
+        }
+        return null;
+    }
 
 
 
